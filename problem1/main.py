@@ -1,6 +1,9 @@
 def compare(a, b):
-    pattern = ""
-    return pattern
+    import os
+    common_substring = os.path.commonprefix([a, b])
+    return common_substring
+
+
 
 if __name__ == '__main__':
     print(compare("AKA", "AKASHI")) # AKA
